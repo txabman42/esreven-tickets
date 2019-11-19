@@ -16,7 +16,7 @@
 
 	<properties>
 		<java.version>1.8</java.version>
-		<elasticsearch.version>5.6.0</elasticsearch.version>
+		<elasticsearch.version>7.1.1</elasticsearch.version>
 	</properties>
 
 	<dependencies>
@@ -26,20 +26,36 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter</artifactId>
 		</dependency>
-
-		<!-- Spring Data -->
 		<dependency>
-			<groupId>org.springframework.data</groupId>
-			<artifactId>spring-data-elasticsearch</artifactId>
-			<version>3.1.10.RELEASE</version>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
-		<!-- Other -->
+		<!-- SpringFox -->
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger2</artifactId>
+			<version>2.9.2</version>
+		</dependency>
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger-ui</artifactId>
+			<version>2.9.2</version>
+		</dependency>
+
+		<!-- ElasticSearch -->
 		<dependency>
 			<groupId>org.elasticsearch</groupId>
 			<artifactId>elasticsearch</artifactId>
 			<version>${elasticsearch.version}</version>
 		</dependency>
+		<dependency>
+			<groupId>org.elasticsearch.client</groupId>
+			<artifactId>elasticsearch-rest-high-level-client</artifactId>
+			<version>${elasticsearch.version}</version>
+		</dependency>
+
+		<!-- Other -->
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
@@ -58,8 +74,6 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
-
-
 
 	</dependencies>
 

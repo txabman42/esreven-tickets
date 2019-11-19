@@ -10,6 +10,5 @@ import lombok.NoArgsConstructor;
 public class Price {
 
     private Long amount;
-
     private String currency;
 }

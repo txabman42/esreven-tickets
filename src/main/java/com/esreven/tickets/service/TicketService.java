@@ -5,13 +5,13 @@ import java.util.Optional;
 
 public interface TicketService {
 
-    Ticket save(Ticket ticket);
-
-    Optional<Ticket> findOne(String id);
-
-    Iterable<Ticket> findAll();
-
-    long count();
-
-    void delete(Ticket ticket);
+//    Ticket save(Ticket ticket);
+//
+//    Optional<Ticket> findOne(String id);
+//
+//    Iterable<Ticket> findAll();
+//
+//    long count();
+//
+//    void delete(Ticket ticket);
 }
