@@ -12,6 +12,7 @@ public class Ticket {
 
     private Long id;
     private Long listingId;
+    private Event event;
     private Long sectionId;
     private Integer quantity;
     private String sellerSectionName;
@@ -27,6 +28,5 @@ public class Ticket {
     private String zone;
     private String splitQuantity;
     private List<Integer> buyQuantityOptions;
-    private List<Location> products;
 
 }

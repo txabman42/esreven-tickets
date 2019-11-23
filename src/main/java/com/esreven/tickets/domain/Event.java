@@ -1,6 +1,5 @@
 package com.esreven.tickets.domain;
 
-import java.util.List;
 import java.util.UUID;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -19,6 +18,5 @@ public class Event {
     private int maxQuantity;
     private int start;
     private int rows;
-  private List<Ticket> listings;
 
 }

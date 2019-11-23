@@ -1,8 +1,7 @@
 package com.esreven.tickets.model;
 
+import com.esreven.tickets.domain.Ticket;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import java.util.List;
-import javax.validation.Valid;
 import javax.validation.constraints.NotNull;
 import lombok.Builder;
 import lombok.Data;
@@ -11,7 +10,7 @@ import org.springframework.validation.annotation.Validated;
 @Data
 @Builder
 @Validated
-public class EventDto {
+public class EventDto extends  {
 
     @JsonProperty("eventId")
     @NotNull
@@ -40,9 +39,5 @@ public class EventDto {
     @JsonProperty("rows")
     @NotNull
     private int rows;
-
-    @JsonProperty("listings")
-    @Valid
-    private List<TicketDto> listings;
 
 }
