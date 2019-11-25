@@ -11,7 +11,10 @@ import lombok.ToString;
 @ToString
 @NoArgsConstructor
 @AllArgsConstructor
-public class TicketEvent extends Ticket {
+public class TicketEvent {
 
+    private static final long serialVersionUID = -1L;
+
+    private Ticket ticket;
     private Event event;
 }

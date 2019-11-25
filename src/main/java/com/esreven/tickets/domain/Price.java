@@ -9,6 +9,8 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class Price {
 
+    private static final long serialVersionUID = -1L;
+
     private Long amount;
     private String currency;
 }

@@ -1,6 +1,7 @@
 package com.esreven.tickets.domain;
 
 import java.util.List;
+import java.util.UUID;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -10,7 +11,9 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class Ticket {
 
-    private Long id;
+    private static final long serialVersionUID = -1L;
+
+    private UUID id;
     private Long listingId;
     private Event event;
     private Long sectionId;
@@ -28,5 +31,6 @@ public class Ticket {
     private String zone;
     private String splitQuantity;
     private List<Integer> buyQuantityOptions;
+    private List<Location> locations;
 
 }

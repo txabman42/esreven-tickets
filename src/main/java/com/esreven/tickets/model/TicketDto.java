@@ -44,15 +44,12 @@ public class TicketDto {
     private Boolean isGA;
 
     @JsonProperty("splitOption")
-    @NotNull
     private String splitOption;
 
     @JsonProperty("sellerOwnInd")
-    @NotNull
     private Long sellerOwnInd;
 
     @JsonProperty("faceValue")
-    @NotNull
     private PriceDto faceValue;
 
     @JsonProperty("isSectionMapped")
@@ -64,18 +61,15 @@ public class TicketDto {
     private PriceDto pricePerProduct;
 
     @JsonProperty("zone")
-    @NotNull
     private String zone;
 
     @JsonProperty("splitQuantity")
-    @NotNull
     private String splitQuantity;
 
     @JsonProperty("buyQuantityOptions")
-    @NotNull
     private List<Integer> buyQuantityOptions;
 
     @JsonProperty("products")
     @NotNull
-    private List<LocationDto> products;
+    private List<LocationDto> locationDtos;
 }

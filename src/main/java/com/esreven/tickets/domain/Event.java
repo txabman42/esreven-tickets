@@ -10,6 +10,8 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class Event {
 
+    private static final long serialVersionUID = -1L;
+
     private UUID id;
     private Long eventId;
     private Long totalListing;

@@ -9,6 +9,8 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class Location {
 
+    private static final long serialVersionUID = -1L;
+
     private String row;
     private String seat;
 }

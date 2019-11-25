@@ -1,9 +1,9 @@
 package com.esreven.tickets.service;
 
-import com.esreven.tickets.domain.Ticket;
+import com.esreven.tickets.model.TicketEventDto;
 import java.io.IOException;
 
 public interface TicketService {
 
-    Ticket save(Ticket ticket) throws IOException;
+    TicketEventDto save(TicketEventDto ticketEventDto) throws IOException;
 }
