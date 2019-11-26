@@ -1,4 +1,4 @@
-package com.esreven.tickets.scheduling;
+package com.esreven.tickets.configuration.scheduling;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

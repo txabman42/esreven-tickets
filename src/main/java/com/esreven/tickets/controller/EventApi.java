@@ -13,19 +13,20 @@ import javax.validation.Valid;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 
+@RequestMapping("/event")
 @Api(value = "Events", tags={ "events" })
-public interface EventApi {
+public interface EventApi extends BaseApi {
 
     @ApiOperation(value = "Creates a new event", nickname = "addEvent", response = EventDto.class)
     @ApiResponses(value = {
         @ApiResponse(code = 201, message = "Created", response = EventDto.class),
         @ApiResponse(code = 400, message = "Bad request"),
         @ApiResponse(code = 401, message = "Unauthorized") })
-    @PostMapping(value = "/event/tickets",
+    @PostMapping(value = "/tickets",
         produces = { "application/json" },
         consumes = { "application/json" })
     ResponseEntity<List<TicketEventDto>> addEvent(@Valid @RequestBody EventTicketDto body)
         throws IOException;
-
 }

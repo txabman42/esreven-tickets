@@ -9,3 +9,9 @@ server:
 
 elasticsearch:
   port: 9200
+
+rest:
+  token: aAeZtNHmwnwRMogbOK1z6u1z1LXp
+  eventList: [104339413]
+  ticketsPerEvent:
+    uri: https://api.stubhub.com/sellers/find/listings/v3/
