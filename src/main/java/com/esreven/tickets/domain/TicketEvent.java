@@ -1,16 +1,20 @@
 package com.esreven.tickets.domain;
 
 import lombok.AllArgsConstructor;
-import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
 
-@Data
+@Getter
+@Setter
+@ToString
 @NoArgsConstructor
 @AllArgsConstructor
-public class Location {
+public class TicketEvent {
 
     private static final long serialVersionUID = -1L;
 
-    private String row;
-    private String seat;
+    private Ticket ticket;
+    private Event event;
 }
