@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: tickets
+  profiles:
+    active: local
+
+server:
+  port: 7070
+
+elasticsearch:
+  port: 9200
+
+rest:
+  token: aAeZtNHmwnwRMogbOK1z6u1z1LXp
+  eventList: [104339413]
+  ticketsPerEvent:
+    uri: https://api.stubhub.com/sellers/find/listings/v3/

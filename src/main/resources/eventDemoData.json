@@ -1,0 +1,51 @@
+{
+  "eventId":104339413,
+  "totalListings":208,
+  "totalTickets":497,
+  "minQuantity":1,
+  "maxQuantity":12,
+  "start":0,
+  "rows":1,
+  "additionalEventLevelPriceInfo":[
+
+  ],
+  "additionalSectionLevelPriceInfo":[
+
+  ],
+  "listings":[
+    {
+      "listingId":1574729233,
+      "sectionId":2366451,
+      "quantity":1,
+      "sellerSectionName":"Planta 4 7",
+      "sectionName":"Planta 4 7",
+      "zoneId":328816,
+      "deliveryTypeList":[
+        2
+      ],
+      "isGA":0,
+      "splitOption":"NONE",
+      "sellerOwnInd":0,
+      "faceValue":{
+        "amount":26,
+        "currency":"EUR"
+      },
+      "isSectionMapped":true,
+      "pricePerProduct":{
+        "amount":60,
+        "currency":"EUR"
+      },
+      "zone":"Planta 4",
+      "splitQuantity":"1",
+      "buyQuantityOptions":[
+        1
+      ],
+      "products":[
+        {
+          "row":"14",
+          "seat":"14"
+        }
+      ]
+    }
+  ]
+}
